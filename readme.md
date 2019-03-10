@@ -7,7 +7,7 @@
 ```bash
 sed -i 's/<USERNAME>/你的用户名/g' bdwm_login.sh
 sed -i 's/<PASSWORD>/你的密码/g' bdwm_login.sh
-
+chmod u+x bdwm_login.sh
 (crontab -l 2>/dev/null; echo "0 9 * * * <path to bdwm_login.sh>") | crontab -
 ```
 
